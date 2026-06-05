@@ -10,6 +10,7 @@ export interface SessionData {
 }
 
 const sessionPassword = process.env.SESSION_PASSWORD;
+console.log("session password=> ", sessionPassword)
 if (!sessionPassword && process.env.NODE_ENV === 'production') {
   throw new Error('SESSION_PASSWORD no configurado. Requerido en producción para firmar cookies de sesión.');
 }
