@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Make Next.js root fill the viewport */
+html, body, #__next {
+  height: 100%;
+}
+
+/* Reserve scrollbar space to prevent layout shift on content expansion */
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-color: #f1f5f9;
+}
+
+/* Smooth transitions for interactive elements */
+* {
+  transition-property: border-color, box-shadow, background-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
